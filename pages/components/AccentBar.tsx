@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import logoMobile from '../public/assets/images/shared/deloitte-logo-mobile.png'
-import logoDesktopTablet from '../public/assets/images/shared/deloitte-logo-desktop-tablet.png'
+import logoMobile from '../../public/assets/images/shared/deloitte-logo-mobile.png'
+import logoDesktopTablet from '../../public/assets/images/shared/deloitte-logo-desktop-tablet.png'
 
-const Navbar: React.FC = () => {
+const AccentBar: React.FC = () => {
 
     const [logo, setLogo] = useState(true)
 
@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
     }, [])
 
     return (
-        <nav className="w-screen h-[70px] bg-black">
+        <nav className="w-screen h-[70px] bg-black absolute lg:hidden">
             <div className="flex items-center pl-[20px] pt-[15px]">
                 <Image src={logo === true ? logoMobile : logoDesktopTablet} alt="Deloitte Logo" width={logo === true ? 98.91 : 178.2} height={40} />
                 <div className="flex items-center" >
@@ -30,4 +30,4 @@ const Navbar: React.FC = () => {
     )
 }
 
-export default Navbar
+export default AccentBar
