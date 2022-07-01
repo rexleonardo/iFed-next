@@ -4,7 +4,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'fade-in': '{animation-name: fade-in}'
+      },
+      dropShadow: {
+        'custom': '10px 10px 10px rgba(0, 0, 0, 0.25)'
+      }
+    }
   },
   plugins: [],
 }
