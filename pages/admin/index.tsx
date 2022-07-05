@@ -1,8 +1,8 @@
 import { NextPage } from 'next'
 import Image from "next/image"
 
-import Navbar from '../../components/Navbar/Navbar'
-import Sidebar from '../../components/Navbar/sub-components/Menu'
+import Navbar from '../../components/shared/Navbar'
+import Menu from '../../components/shared/subcomponents/Menu'
 
 import MdOutlineBadges from '../../public/assets/images/admin/MdOutlineBadge.svg'
 import MdOutlineAccountTree from '../../public/assets/images/admin/MdOutlineAccountTree.svg'
@@ -11,7 +11,6 @@ const AdminHome: NextPage = () => {
     return (
         <div>
             <Navbar />
-            <Sidebar />
             <div className="bg-[url('../public/assets/images/admin/background-admin.jpg')] bg-center bg-no-repeat bg-cover md:pl-[100px] lg:pl-[170px] w-screen h-[72px] md:h-[147.81px] lg:h-[277px] text-white text-[48px] md:text-[64px] lg:text-[128px] font-bold flex justify-center md:justify-start items-center">
                 admin
             </div>
