@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import logoMobile from '../../public/assets/images/shared/deloitte-logo-mobile.png'
-import logoDesktopTablet from '../../public/assets/images/shared/deloitte-logo-desktop-tablet.png'
+import logoMobile from '../public/assets/images/shared/deloitte-logo-mobile.png'
+import logoDesktopTablet from '../public/assets/images/shared/deloitte-logo-desktop-tablet.png'
 
 const AccentBar: React.FC = () => {
 

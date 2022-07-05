@@ -2,16 +2,16 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from "next/image"
 
-import AccentBar from './components/AccentBar'
-import Form from './components/Form'
+import AccentBar from '../components/AccentBar'
+import Form from '../components/Form'
 
 import logoDesktopTablet from '../public/assets/images/shared/deloitte-logo-desktop-tablet.png'
-import logoiFED from '../public/assets/images/login/logo-ifed.png'
+import logoiFED from '../public/assets/images/logo-ifed.png'
 
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[url('../public/assets/images/login/background-login-mobile.jpg')] md:bg-[url('../public/assets/images/login/background-login-tablet.jpg')] lg:bg-[url('../public/assets/images/login/background-login-desktop-xl.jpg')] lg:bg-black bg-center lg:bg-right bg-no-repeat bg-cover h-screen flex justify-center lg:justify-between">
+    <div className="bg-[url('../public/assets/images/background-login-register-mobile.jpg')] md:bg-[url('../public/assets/images/background-login-register-tablet.jpg')] lg:bg-[url('../public/assets/images/background-login-register-desktop-xl.jpg')] lg:bg-black bg-center lg:bg-right bg-no-repeat bg-cover h-screen flex justify-center lg:justify-between">
       <Head>
         <title>iFED</title>
         <meta name="description" content="Deloitte Consulting Philippines Delivery Center" />
